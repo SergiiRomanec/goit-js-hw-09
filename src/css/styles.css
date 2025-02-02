@@ -1,24 +1,49 @@
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
-}
-
-.gallery-image {
-  display: block;
-  width: 360px;
-  height: 200px;
-  transition: transform 0.3s ease;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .gallery-item {
-  list-style-type: none;
+  flex-basis: calc(33.333% - 10px);
 }
 
-.gallery-image:hover {
+.gallery-link {
+  display: block;
+}
+
+.gallery-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.sl-overlay {
+  background: rgba(46, 47, 66, 0.8) !important;
+}
+
+.sl-close {
+  color: #fff !important;
+  font-size: 36px !important;
+  border: none;
+}
+
+.sl-close:hover {
   transform: scale(1.1);
 }
 
+.sl-next,
+.sl-prev {
+  color: #fff !important;
+}
+
+.sl-counter {
+  color: #fff !important;
+}
 /* Form css */
 .body {
   font-family: 'Montserrat', sans-serif;
